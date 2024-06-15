@@ -1,0 +1,89 @@
+:root {
+    --bg-primary: #333;
+    --clr-primary: #eee;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+    overscroll-behavior: none;
+}
+
+body {
+    overscroll-behavior: none;
+    background-color: var(--bg-primary);
+    color: var(--clr-primary);
+    font-size: 1.6rem;
+    font-family: "OpenSans", Arial, Helvetica, sans-serif;
+    height: 100dvh;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.flex-column {
+    display: flex;
+    flex-direction: column;
+}
+
+.justify-content-center {
+    justify-content: center;
+}
+
+.align-items-center {
+    align-items: center;
+}
+
+.text-align-center {
+    text-align: center;
+}
+
+main {
+    padding: 0.8rem;
+    flex: 1;
+}
+
+#canvas {
+    border: 0.1rem solid var(--clr-primary);
+    width: 30rem;
+    height: 30rem;
+    max-height: 70vw;
+    max-width: 70dvw;
+}
+
+button {
+    background-color: var(--clr-primary);
+    color: var(--bg-primary);
+    border: 0.1rem solid var(--bg-primary);
+    padding: 0.8rem 3.2rem;
+    margin: 0.8rem;
+    border-radius: 0.8rem;
+    font-size: larger;
+    font-weight: bold;
+}
+
+button:hover {
+    background-color: var(--bg-primary);
+    color: var(--clr-primary);
+    border-color: var(--clr-primary);
+}
+
+a {
+    text-decoration: none;
+    color: var(--clr-primary);
+}
+
+a:hover {
+    font-size: medium;
+    font-weight: bold;
+}
+
+footer {
+    font-size: 1.4rem;
+    height: 5rem;
+}
